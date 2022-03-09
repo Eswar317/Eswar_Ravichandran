@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 html, body {
     scroll-behavior: smooth;
@@ -463,7 +463,7 @@ header button:hover a {
         transform: translateY(-50%);
     }
     #e-t {
-        bottom: 5%;
+        bottom: 6%;
     }
     #er {
         font-size: 200px;
@@ -500,6 +500,9 @@ header button:hover a {
     }
     #slide-img img{
         width: 80%;
+    }
+    #slide-cnt p {
+        font-size: 15px;
     }
     #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
         width: 80%;
