@@ -271,9 +271,11 @@ header button:hover a {
 
 /* project */
 #project {
+    clear: right;
     background-color: rgb(36, 36, 36);
     padding: 30px 0px;
     color: beige;
+    margin-top: -45px;
 }
 #project h1 {
     text-align: center;
@@ -282,7 +284,6 @@ header button:hover a {
 #project-cnt {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
 }
 #slide-img {
     width: 30%;
@@ -302,6 +303,8 @@ header button:hover a {
     font-size: 40px;
     color: #ff9933;
     font-weight: bold;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
 }
 #slide-cnt p {
     font-size: 20px;
@@ -334,6 +337,7 @@ header button:hover a {
 #contact h1 {
     color: #ff9933;
     text-align: center;
+    font-family: 'Fredoka', sans-serif;
     text-shadow: 0px 0px 10px #ff9933;
     -webkit-text-shadow: 0 0 10px #ff9933;
 }
@@ -364,6 +368,7 @@ header button:hover a {
     border:  2px solid #ff9933;
     box-shadow: 0px 0px 10px #ff9933;
     -webkit-box-shadow: 0 0 10px #ff9933;
+    font-family: 'Fredoka', sans-serif;
 }
 #contact-form h6 {
     margin: 20px 0px;
@@ -401,6 +406,7 @@ header button:hover a {
 .footer h2 {
     font-size: 20px;
     text-align: center;
+    font-family: 'Fredoka', sans-serif;
 }
 
 /* up btn */
@@ -523,6 +529,10 @@ header button:hover a {
         right: 20px;
         font-size: 15px;
         padding: 5px 10px;
+    }
+    #footer-icon li i {
+        font-size: 15px;
+        color: #fff;
     }
 }
 @media screen and (max-width: 400px) {
