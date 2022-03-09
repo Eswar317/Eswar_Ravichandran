@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    font-family: 'Fredoka', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 html, body {
     scroll-behavior: smooth;
@@ -142,7 +142,7 @@ header button:hover a {
     -webkit-transform: translateY(-50%) rotate(-90deg);
     position: absolute;
     right: 0%;
-    top: 50%;
+    top: 42%;
     z-index: 0;
     transform: translateY(-50%) rotate(-90deg);
 }
@@ -449,6 +449,22 @@ header button:hover a {
     }
 }
 @media screen and (max-width: 700px) {
+    header h1 {
+        font-size: 40px;
+    }
+    header button {
+        font-size: 15px;
+        margin: 5px 0px;
+    }
+    #inner-cnt {
+        -webkit-transform: translateY(-50%);
+        top: 40%;
+        position: absolute;
+        transform: translateY(-50%);
+    }
+    #e-t {
+        bottom: 5%;
+    }
     #er {
         font-size: 200px;
     }
@@ -468,7 +484,7 @@ header button:hover a {
         display: block;
     }
     #abt-cnt p {
-        font-size: 20px;
+        font-size: 15px;
         margin: 30px auto;
         width: 100%;
     }
@@ -479,16 +495,22 @@ header button:hover a {
         align-items: center;
         display: block;
     }
+    #education ul li {
+        font-size: 15px;
+    }
     #slide-img img{
         width: 80%;
     }
     #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {
         width: 80%;
     }
+    .footer h2 {
+        font-size: 15px;
+    }
 }
 @media screen and (max-width: 400px) {
     #er {
-        font-size: 150px;
+        font-size: 100px;
     }
     #sec {
         font-size: 65px;
