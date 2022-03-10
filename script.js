@@ -83,6 +83,7 @@ const message = document.getElementById('message');
 document.getElementById('contact-form')
  .addEventListener('submit', function(event) {
    event.preventDefault();
+   btn.disabled = true;
    btn.value = 'Sending...';
    const serviceID = 'eswarravi317';
    const templateID = 'template_yn2lo0m';
@@ -90,6 +91,7 @@ document.getElementById('contact-form')
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
       btn.value = 'Send Another Message';
+      btn.disabled = false;
       name.value = '';
       email.value = '';
       message.value = '';
