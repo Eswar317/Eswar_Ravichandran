@@ -16,8 +16,7 @@ function carousel() {
 /* nav */
 $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 
-// detect scroll top or down
-if ($('.smart-scroll').length > 0) { // check if element exists
+if ($('.smart-scroll').length > 0) {
     var last_scroll_top = 0;
     $(window).on('scroll', function() {
         scroll_top = $(this).scrollTop();
@@ -54,6 +53,26 @@ $(window).on('load',function() {
       $("#cnt").fadeIn(1000);
   },3000);
 });
+
+/* animate */
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+  var reveals = document.querySelectorAll('.reveal');
+
+  for(var i=0; i < reveals.length; i++) {
+    var windowheight = window.innerHeight;
+    var revealtop = reveals[i].getBoundingClientRect().top;
+    var revealpoint = 150;
+
+    if(revealtop < windowheight - revealpoint) {
+      reveals[i].classList.add('active');
+    }
+    else {
+      reveals[i].classList.remove('active');
+    }
+  }
+}
 
 /*sendmail*/
 const btn = document.getElementById('submit');

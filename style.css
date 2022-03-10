@@ -430,6 +430,19 @@ header button:hover a {
     background-color: #555;
 }
 
+/* reveal */
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+    overflow: hidden;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 @media screen and (max-width: 1000px) {
     #er {
         font-size: 250px;
