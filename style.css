@@ -233,10 +233,10 @@ header button:hover a {
     width: 60%;
 }
 #abt-cnt img {
-    height: 300px;
-    width: 200px;
-    margin: 30px auto;
-    transition: all 0.2 ease;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    margin: 5px auto;
 }
 #abt-cnt img:hover {
     transition: .5s ease;
@@ -453,6 +453,12 @@ header button:hover a {
     #inner-cnt p {
         font-size: 25px;
     }
+    #abt-cnt img {
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
     #project-cnt {
         display: block;
     }
@@ -516,11 +522,8 @@ header button:hover a {
         width: 100%;
     }
     #abt-cnt img {
-        width: 50%;
-        margin: 30px auto;
-        justify-content: center;
-        align-items: center;
-        display: block;
+        width: 80%;
+        height: 400px;
     }
     #education ul li {
         font-size: 15px;
